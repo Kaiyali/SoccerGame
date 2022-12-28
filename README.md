@@ -45,18 +45,23 @@ The visual concept I had in mind was something similar to this:
 #### Step One - Player movement
 Apply the logic for the drag and move forward:  
 ``` processing
-void mousePressed(){
-  tmx = mouseX;
-  tmy = mouseY;
-  
-  //if the ball has not been click do not allow the call to move
-  if(mousePos <= circleRadius/2){
-    print(mousePos);
-    xdir = 0;
-    ydir = 0;
-    ballclicked = true;
-  }else{
-    ballclicked = false;
+void mouseReleased() {
+  //depending the area of the mouse the speed changes
+  if (ballclicked && turn % 2 == 0) {
+    println("Ball clicked");
+    float dx = tmx - mouseX;
+    float dy = tmy - mouseY;
+
+    float angle = atan2(dy/2, dx/2);
+    FrenchBall.angle = angle;
+    FrenchBall.speed = 10;
+  } else if (ballclicked && turn % 2 !=0) {
+    float dx = tmx - mouseX;
+    float dy = tmy - mouseY;
+
+    float angle = atan2(dy/2, dx/2);
+    ArgentinaBall.angle = angle;
+    ArgentinaBall.speed = 10;
   }
 }
 
@@ -68,6 +73,34 @@ void draw() {
   frenchBall.move(.99);
   soccerBall.move(.99);
   }
+```
+The `player` class:
+
+``` processing
+void move(float value) {
+    if (speed > .1) {
+      speed *= value;
+    } else {
+      speed = 0;
+    }
+
+    speed *= .99;
+    speed *= .99;
+
+    mx = cos(angle) * speed;
+    my = sin(angle) * speed;
+
+    x += mx;
+    y += my;
+  }
+
+  void display() {
+    circle(x, y, w);
+    imageMode(CENTER);
+    image(img, x, y, w, w);
+  }
+
+
 ```
 This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
 #### Step Two
