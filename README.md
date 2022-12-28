@@ -45,7 +45,20 @@ The visual concept I had in mind was something similar to this:
 #### Step One - Player movement
 
 ```processing
-
+void mousePressed(){
+  tmx = mouseX;
+  tmy = mouseY;
+  
+  //if the ball has not been click do not allow the call to move
+  if(mousePos <= circleRadius/2){
+    print(mousePos);
+    xdir = 0;
+    ydir = 0;
+    ballclicked = true;
+  }else{
+    ballclicked = false;
+  }
+}
 
 ```
 #### Step Two
