@@ -110,7 +110,11 @@ I drew these texture to improve the overall feel of the game.
 <img width="50" alt="FrenchBall" src="https://user-images.githubusercontent.com/80181145/209845175-c5a432e5-337b-4343-a44d-82a6e9e634aa.png">
 <img width="50" alt="soccerBall" src="https://user-images.githubusercontent.com/80181145/209845178-86fcc74f-7183-484b-89be-168eeaa899e7.png">
 
+
+To achieve a level 4 I must add an interface to my game so I built a `Button` class from my game to easy development. 
 #### Main Menu
+
+The Main Menu has two buttons, Quit and Play. 
 
 #### Winner Window
 
