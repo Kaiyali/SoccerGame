@@ -43,7 +43,7 @@ The visual concept I had in mind was something similar to this:
 ### Process
 
 #### Step One - Player movement
-Apply The logic 
+Apply the logic for the drag and move forward  
 ```processing
 void mousePressed(){
   tmx = mouseX;
