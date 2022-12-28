@@ -4,7 +4,7 @@
 ### Player Movement Issue
 
 Previous code logic for the movement of the player. 
-```java
+``` processing
 void mousePressed(){
   tmx = mouseX;
   tmy = mouseY;
@@ -21,7 +21,7 @@ void mousePressed(){
 }
 ```
 
-```processing
+``` processing
 void draw() {
   if(ballclicked){
      posX += xdir;
