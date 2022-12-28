@@ -37,8 +37,10 @@ I started off by cutting my game into smaller tasks:
 
 The visual concept I had in mind was something similar to this:
 
-
+<p align="center">
 <img width="700" alt="BrainStorming_Idea" src="https://user-images.githubusercontent.com/80181145/209754378-8eaacde3-d300-46d2-b28f-b18cc9fcf044.jpg">
+</p>
+
 
 ### Process
 
@@ -97,31 +99,62 @@ void move(float value) {
 
     x += mx;
     y += my;
-  }
+}
 
 
 
 ```
-This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/Soc
-cerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
-#### Step Two - Physics 
-#### Step Three - Collision
-#### Step Four - Texture and final touches
+This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
+### Step Two - Physics 
 
-I wanted my game to look better by adding texture to my players as well as my nets and background. 
+At first  2Dphysics  
 
-I drew these texture to improve the overall feel of the game.
-
-<img width="50" alt="ArgentinaBall-removebg-preview (1)" src="https://user-images.githubusercontent.com/80181145/209846750-3101af2d-ee9e-41bd-bcfd-350a5220c339.png">
-<img width="50" alt="FrenchBall" src="https://user-images.githubusercontent.com/80181145/209845175-c5a432e5-337b-4343-a44d-82a6e9e634aa.png">
-<img width="50" alt="soccerBall" src="https://user-images.githubusercontent.com/80181145/209845178-86fcc74f-7183-484b-89be-168eeaa899e7.png">
+### Step Three - Collision
 
 
-To achieve a level 4 I must add an interface to my game so I built a `Button` class from my game to easy development. 
-#### Main Menu
+### Step Four - Texture and final touches
 
-The Main Menu has two buttons, Quit and Play. 
+My final step was to add the finish touches such as a `Main Menu`, `Winner Window` and textures to make the game look prettier. This step sounds simple yet it as some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md). I drew these texture to place on top of the players (cicles).
+<p align="center">
+    <img width="50" alt="ArgentinaBall-removebg-preview (1)" src="https://user-images.githubusercontent.com/80181145/209846750-3101af2d-ee9e-41bd-bcfd-350a5220c339.png">
+    <img width="50" alt="FrenchBall" src="https://user-images.githubusercontent.com/80181145/209845175-c5a432e5-337b-4343-a44d-82a6e9e634aa.png">
+    <img width="50" alt="soccerBall" src="https://user-images.githubusercontent.com/80181145/209845178-86fcc74f-7183-484b-89be-168eeaa899e7.png">
+</p>
 
-#### Winner Window
+
+I applied these textures in the `Players` class constractor to simplifiy and clean up my code.  
+
+``` processing 
+class Player {
+  float x, y, w;
+  float mx, my;
+  float speed;
+  float angle, degree;
+  boolean inContact;
+  PImage img;
+  String photo;
+
+
+  Player(float x, float y, float w, String photo) {
+    mx = 0;
+    my = 0;
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.photo = photo;
+    img = loadImage(photo);
+  }
+}
+
+```
+`Main.pde`:   
+``` processing
+ArgentinaBall  = new Player(width/2+width/6, height/2, circleRadius, "ArgentinaBall.png");
+soccerBall     = new Player(width/2, height/2, circleRadius, "soccerBall.png");
+FrenchBall     = new Player(width/3, height/2, circleRadius, "FrenchBall.png");
+```
+
+
+
 
 
