@@ -43,7 +43,7 @@ The visual concept I had in mind was something similar to this:
 ### Process
 
 #### Step One - Player movement
-
+Apply The logic 
 ```processing
 void mousePressed(){
   tmx = mouseX;
@@ -60,6 +60,16 @@ void mousePressed(){
   }
 }
 
+```
+
+```processing
+
+void draw() {
+  if(ballclicked){
+     posX += xdir;
+     posY += ydir;
+  }
+}
 ```
 #### Step Two
 #### Step Three
