@@ -34,3 +34,8 @@ I started off by cutting my game into smaller tasks:
 - Adding textures
 - Making a main menu
 - Making a Winner window
+
+The visual concept I had in mind was something similar to this:
+
+
+![BrainStorming_Idea](https://user-images.githubusercontent.com/80181145/209754378-8eaacde3-d300-46d2-b28f-b18cc9fcf044.jpg)
