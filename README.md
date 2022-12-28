@@ -43,7 +43,7 @@ The visual concept I had in mind was something similar to this:
 ### Process
 
 #### Step One - Player movement
-Apply the logic for the drag and move forward  
+Apply the logic for the drag and move forward:  
 ```processing
 void mousePressed(){
   tmx = mouseX;
@@ -61,7 +61,7 @@ void mousePressed(){
 }
 
 ```
-
+Displaying the change of movement using the `draw()`:
 ```processing
 
 void draw() {
