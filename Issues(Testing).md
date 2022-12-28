@@ -1,7 +1,7 @@
 ## Issues
 
 
-### Player Movement Issue
+### Movement Issue
 
 Previous code logic for the movement of the player. 
 ``` processing
