@@ -2,7 +2,9 @@
 
 
 ### Movement Issue
-I incountered a problem with my player movement...
+I incountered a problem with my player movement the movement of the player was not how I wish it to be. 
+
+
 Previous code logic for the movement of the player. 
 ``` processing
 void mousePressed(){
