@@ -65,11 +65,9 @@ Displaying the change of movement using the `draw()`:
 ``` processing
 
 void draw() {
-  if(ballclicked){
-     posX += xdir;
-     posY += ydir;
+  FrenchBall.move(.99);
+  soccerBall.move(.99);
   }
-}
 ```
 This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
 #### Step Two
