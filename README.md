@@ -94,11 +94,6 @@ void move(float value) {
     y += my;
   }
 
-  void display() {
-    circle(x, y, w);
-    imageMode(CENTER);
-    image(img, x, y, w, w);
-  }
 
 
 ```
