@@ -97,7 +97,16 @@ void move(float value) {
 
 
 ```
-This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
+This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/Soc
+cerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
 #### Step Two - Physics 
 #### Step Three - Collision
 #### Step Four - Texture and final touches
+
+I wanted my game to look better by adding texture to my players as well as my nets and background. 
+
+I drew these for the soccerball and the two players.
+<img width="101" alt="ArgentinaBall" src="https://user-images.githubusercontent.com/80181145/209845172-411b5e3e-2e90-441a-80da-5c0829fecb84.png">
+<img width="101" alt="FrenchBall" src="https://user-images.githubusercontent.com/80181145/209845175-c5a432e5-337b-4343-a44d-82a6e9e634aa.png">
+<img width="101" alt="soccerBall" src="https://user-images.githubusercontent.com/80181145/209845178-86fcc74f-7183-484b-89be-168eeaa899e7.png">
+
