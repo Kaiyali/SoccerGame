@@ -39,10 +39,15 @@ The visual concept I had in mind was something similar to this:
 
 
 <img width="700" alt="BrainStorming_Idea" src="https://user-images.githubusercontent.com/80181145/209754378-8eaacde3-d300-46d2-b28f-b18cc9fcf044.jpg">
+
 ### Process
+
 ***
+
 #### Step One - Player movement
+
 Apply the logic for the drag and move forward:  
+
 ``` processing
 void mouseReleased() {
   //depending the area of the mouse the speed changes
@@ -66,6 +71,7 @@ void mouseReleased() {
 
 ```
 Displaying the change of movement using the `draw()`:
+
 ``` processing
 
 void draw() {
