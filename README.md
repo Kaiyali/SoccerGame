@@ -65,7 +65,7 @@ Displaying the change of movement using the `draw()`:
 ``` processing
 
 void draw() {
-  FrenchBall.move(.99);
+  frenchBall.move(.99);
   soccerBall.move(.99);
   }
 ```
