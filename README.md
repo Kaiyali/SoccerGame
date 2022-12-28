@@ -44,7 +44,7 @@ The visual concept I had in mind was something similar to this:
 ***
 #### Step One - Player movement
 Apply the logic for the drag and move forward:  
-```processing
+```java
 void mousePressed(){
   tmx = mouseX;
   tmy = mouseY;
@@ -62,7 +62,7 @@ void mousePressed(){
 
 ```
 Displaying the change of movement using the `draw()`:
-```processing
+```java
 
 void draw() {
   if(ballclicked){
