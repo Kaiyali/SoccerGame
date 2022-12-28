@@ -3,7 +3,7 @@
 
 ## Description of the project
 
-> The project was to make a simple  game with the programming language `Processing`. That includes our pass lessons such as the usage of `dist()`, `array`, collision, etc. While building the game developers must have in mind how to tackle another problem which is the flexibleity of the game; meaning the game of screen `size()` would not change or ruin the overall game functionality.   
+> The project was to make a simple  game with the programming language `Processing`. That includes our pass lessons such as the usage of `dist()`, `array`, collision, etc. While building the game developers must have in mind how to tackle another problem which is the flexibleity of the game; meaning the screen `size()` would not change or ruin the overall game functionality.   
 
  ***
 ## Objective Of The Game
