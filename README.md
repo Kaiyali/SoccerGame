@@ -46,7 +46,7 @@ The visual concept I had in mind was something similar to this:
 
 ***
 
-#### Step One - Player movement
+### Step One - Player movement
 
 Apply the logic for the drag and move forward:  
 
@@ -107,12 +107,22 @@ void move(float value) {
 This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
 ### Step Two - Physics 
 
-At first  2Dphysics  
+The following step was the most complex step I had to encount which is applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issues) and the slowing effects of the players after being launched is what I categorised as "physics" in my game. 
 
-### Step Three - Collision
+``` processing 
+ // checks if the two players have collided with one another via their corrodinate/positions by returning if it is true or false
+boolean collision(Player p1, Player p2) {  
+
+  if (dist(p1.x, p1.y, p2.x, p2.y) < p1.w/2 + p2.w) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
 
 
-### Step Four - Texture and final touches
+### Step Three - Texture And Final Touches
 
 My final step was to add the finish touches such as a `Main Menu`, `Winner Window` and textures to make the game look prettier. This step sounds simple yet it as some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md). I drew these texture to place on top of the players (cicles).
 <p align="center">
@@ -154,6 +164,7 @@ soccerBall     = new Player(width/2, height/2, circleRadius, "soccerBall.png");
 FrenchBall     = new Player(width/3, height/2, circleRadius, "FrenchBall.png");
 ```
 
+### Final Product
 
 
 
