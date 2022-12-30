@@ -37,3 +37,30 @@ For my collision code it went through...
 
 ###  Glueing Things Together
 
+
+After building the `Main Menu`, `Team Window` and the `Winner Window` I had to add them together which lead me to think on how would solve this problem. I solved this problem by adding an `if statement` and change the value of a varible called `gameState` in which depending on the number the user would go to a specific window. 
+
+The Logic behind the problem
+``` processing
+  if (gameState == 0) {
+      menu.menuState();
+  } else if (gameState == 1) {
+      field.showcaseField();
+      menu.Quitbtn.isPressed = false;
+      menu.Playbtn.isPressed = false; 
+  }
+
+```
+
+How the varible changes:
+``` processing
+void mousePressed() {
+  if (menu.Playbtn.isPressed == true ) {
+    gameState = 1;
+  } else if (menu.Quitbtn.isPressed == true) {
+    print("Quit Application");
+    exit();
+  }
+}
+
+```
