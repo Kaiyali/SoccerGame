@@ -107,7 +107,7 @@ void move(float value) {
 This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
 ### Step Two - Physics 
 
-The following step was the most complex step I had to encount which is applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issues(testing).md) and the slowing effects of the players after being launched is what I categorised as "physics" in my game. 
+The following step was the most complex step I had to encount which is applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) and the slowing effects of the players after being launched is what I categorised as "physics" in my game. 
 
 ``` processing 
  // checks if the two players have collided with one another via their corrodinate/positions by returning if it is true or false
