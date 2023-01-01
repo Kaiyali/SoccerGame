@@ -1,6 +1,0 @@
-class GameStates {
-
-  void showField() {
-
-  }
-}
