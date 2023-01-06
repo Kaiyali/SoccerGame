@@ -1,7 +1,7 @@
 # Socro	:soccer:	:soccer:
 
 
-## Description of the project
+## Description Of The Project
 
 > The project was to make a simple game with programming language Processing. That includes our past lessons, such as using `dist()`, `array`, `collision`, etc. While building the game, developers must consider how to tackle another problem: the game's flexibility, meaning the screen `size()` would stay the same and maintain the overall game functionality.
  ***
@@ -45,7 +45,7 @@ The visual concept I had in mind was something similar to this:
 
 ***
 
-### Step One - Player movement
+### Step One - Player Movement
 
 Apply the logic for the drag and move forward:  
 
