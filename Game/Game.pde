@@ -14,6 +14,8 @@ Winner_Window winW = new Winner_Window();
 Teams_Window teamW = new Teams_Window();
 GameStates  GameStates = new GameStates(); 
 Field field = new Field();
+ArrayList<Particle> particles;
+ArrayList<Confitte> confitte;
 Player FrenchBall;
 Player ArgentinaBall;
 Player soccerBall;
@@ -24,6 +26,8 @@ int turn = 0;
 
 void setup() {
   size(1200, 800);
+  particles = new ArrayList<Particle>();
+  confitte = new ArrayList<Confitte>();
   posX = width/2;
   posY = height/2;
   cposX = width/3;
@@ -32,15 +36,31 @@ void setup() {
   leftScore = 0;
   circleRadius = 100;
   gameState = 0; 
-  ArgentinaBall  = new Player(width/2+width/6, height/2, circleRadius,"team"+teamW.p1Team+".png" );
+  ArgentinaBall  = new Player(width/2+width/6, height/2, circleRadius,"player"+teamW.p1Team+".png" );
   soccerBall     = new Player(width/2, height/2, circleRadius, "soccerBall.png");
-  FrenchBall     = new Player(width/3, height/2, circleRadius,"team"+teamW.p2Team+".png" );
+  FrenchBall     = new Player(width/3, height/2, circleRadius,"player"+teamW.p2Team+".png" );
 }
   
 
 void draw() {
   background(0);
+  for (int i = 0; i < particles.size(); i++) {
+    Particle p = particles.get(i);
+    p.update();
+    p.display();
+    if (p.y > height || p.alpha < 0) {
+      particles.remove(i); // Remove particles that have fallen off the screen or fully faded away
+    }
+  }
 
+  for (int i = 0; i < confitte.size(); i++) {
+    Confitte p = confitte.get(i);
+    p.update();
+    p.display();
+    if (p.y > height) {
+      confitte.remove(i); // Remove particles that have fallen off the screen
+    }
+  }
   if (gameState == GameStates.MENUSTATE) {
     menu.menuState();
   } else if (gameState == GameStates.TEAMSTATE) {
@@ -77,7 +97,8 @@ void mouseReleased() {
     float angle = atan2(dy/2, dx/2);
     ArgentinaBall.angle = angle;
     ArgentinaBall.speed = 10;
-  }
+  }  
+
 }
 
 void mousePressed() {
