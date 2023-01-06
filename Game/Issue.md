@@ -107,5 +107,21 @@ void mousePressed() {
 
 ```
 
+### Questions
+
+What issues have you had in working on your projects?  You may list as many as you can think of.  Please explain how you overcame those problems or fixed them.
+> As I mentioned earlier, I encountered a number of issues while developing this project. One of the most frustrating challenges was creating a flexible user interface. I initially struggled with randomly placing numbers in my parameters, but eventually found a solution. By first finding the area where I wanted to place the UI element, and positioning it using whole numbers instead of fractions, I was able to achieve the desired result. I then divided the whole number by the width to make the UI flexible. This method proved to be effective and saved me a lot of time and effort. 
+
+What is still remaining to be done in your project if you had more time to work on it?  How would you improve your project?  Is there a possibility for making it even more functional?
+> 1. Adding AI opponents: I could add AI opponents that can play against the player in a match. This could involve creating decision-making algorithms to allow the AI to choose the most promising course of action and implementing physics-based movement to make the AI players behave realistically.
+> 2. Adding more detail: I could add more detail to the game to make it look more realistic and immersive. This could involve adding more complex animations for player actions, such as kicking the ball or sliding tackles and adding more detailed graphics for the players and the environment.
+> 3.Improving the user interface: I could improve it to make it more intuitive and user-friendly. This could involve adding a tutorial to help new players learn how to play and adding options to allow players to customize their gameplay experience, such as selecting different teams or adjusting the difficulty level.
+> 4. Adding more game modes: I could add more game modes, such as a tournament mode or a practice mode, to give players more variety and replay value.
+> 5. Balancing the game: I could continue to playtest the game and gather feedback from players to ensure that it is balanced and fair and make adjustments to the game based on that feedback to improve the overall gameplay experience.
+
+What was fun and/or frustrating about your project?  How would you approach your project differently next time?
+> Although I initially struggled with implementing realistic player movement, the process ended up being a valuable learning experience. I also enjoyed creating the art for the game and tackling the challenges that arose during development. In hindsight, I would recommend planning out the game's layout and design before diving into programming. This would have saved me time and effort in the long run, as I had to make significant changes towards the end of development to add a teams selection window. Overall, the process of creating this game was both rewarding and challenging. 
+
+
 
 
