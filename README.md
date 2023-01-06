@@ -103,10 +103,10 @@ void move(float value) {
 
 
 ```
-This way was changed later to improve the game's overall feel and to quickly develop a [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand this problem.
+This way was changed later to improve the game's overall feel and to quickly develop a [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Game/Issue.md) to understand this problem.
 
 ### Step Two - Physics 
-The following step was the most complex step I had to count: applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issues) and the slowing effects of the players after being launched are what I categorized as "physics" in my game.
+The following step was the most complex step I had to count: applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Game/Issue.md) and the slowing effects of the players after being launched are what I categorized as "physics" in my game.
 
 ``` processing 
  // checks if the two players have collided with one another via their corrodinate/positions by returning if it is true or false
@@ -122,7 +122,7 @@ boolean collision(Player p1, Player p2) {
 
 
 ### Step Four - Texture And Final Touches
-My final step was to add the finish touches, such as a Main Menu, Winner Window and textures to make the game look prettier. This step sounds simple, yet it has some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md). I drew these textures on top of the players (circles).
+My final step was to add the finish touches, such as a Main Menu, Winner Window and textures to make the game look prettier. This step sounds simple, yet it has some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Game/Issue.md). I drew these textures on top of the players (circles).
 
 <p align="center">
     <img width="50" alt="ArgentinaBall-removebg-preview (1)" src="https://user-images.githubusercontent.com/80181145/209846750-3101af2d-ee9e-41bd-bcfd-350a5220c339.png">
