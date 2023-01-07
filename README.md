@@ -1,21 +1,22 @@
 # Socro	:soccer:	:soccer:
 
 
-## Description Of The Project
+## Description of the project
 
-> The project was to make a simple game with programming language Processing. That includes our past lessons, such as using `dist()`, `array`, `collision`, etc. While building the game, developers must consider how to tackle another problem: the game's flexibility, meaning the screen `size()` would stay the same and maintain the overall game functionality.
+> The project was to make a simple  game with the programming language `Processing`. That includes our pass lessons such as the usage of `dist()`, `array`, collision, etc. While building the game developers must have in mind how to tackle another problem which is the flexibleity of the game; meaning the screen `size()` would not change or ruin the overall game functionality.   
+
  ***
 ## Objective Of The Game
 
-`Socro` is a basic drog-move soccer game to score three goals against the opposition's net to come out victorious. Although the concept sounds relatively simple, applying this to reality took a lot of work.
+`Socro` is a basic drog-move soccer game with an objective of scoring the 5 gaols against the opposition's net to come out as victorious. Althought the concepts sounds rather simple applying this into reality was no easy task.
 
  ***
 
  ## Brainstorming and Ideation
 | Game Idea        | Reasons           | 
 | -------------    |:-------------:|  
-| Chess Game       | Too dull, and a lot of people would try and make it. | 
-| Soccer Game      | The World Cup was playing during this assignment, so I needed to make a fantastic soccer game.      |   
+| Chess Game       | Too boring and a lot of people would try and make it | 
+| Soccer Game      | The World Cup was playing on at the time of this assigment being assigned so I felt I need to make a cool soccer game.      |   
 | Floppy Bird      | Too basic to create      | 
 
 
@@ -45,7 +46,7 @@ The visual concept I had in mind was something similar to this:
 
 ***
 
-### Step One - Player Movement
+### Step One - Player movement
 
 Apply the logic for the drag and move forward:  
 
@@ -103,10 +104,10 @@ void move(float value) {
 
 
 ```
-This way is the changed version to improve the game's overall feel and to quickly develop a [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Game/Issue.md) to understand this problem.
-
+This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
 ### Step Two - Physics 
-The following step was the most complex step I had to count: applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Game/Issue.md) and the slowing effects of the players after being launched are what I categorized as "physics" in my game.
+
+The following step was the most complex step I had to encount which is applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issues) and the slowing effects of the players after being launched is what I categorised as "physics" in my game. 
 
 ``` processing 
  // checks if the two players have collided with one another via their corrodinate/positions by returning if it is true or false
@@ -122,8 +123,8 @@ boolean collision(Player p1, Player p2) {
 
 
 ### Step Four - Texture And Final Touches
-My final step was to add the finish touches, such as a Main Menu, Winner Window and textures to make the game look prettier. This step sounds simple, yet it has some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Game/Issue.md). I drew these textures on top of the players (circles).
 
+My final step was to add the finish touches such as a `Main Menu`, `Winner Window` and textures to make the game look prettier. This step sounds simple yet it as some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md). I drew these texture to place on top of the players (cicles).
 <p align="center">
     <img width="50" alt="ArgentinaBall-removebg-preview (1)" src="https://user-images.githubusercontent.com/80181145/209846750-3101af2d-ee9e-41bd-bcfd-350a5220c339.png">
     <img width="50" alt="FrenchBall" src="https://user-images.githubusercontent.com/80181145/209845175-c5a432e5-337b-4343-a44d-82a6e9e634aa.png">
@@ -165,8 +166,5 @@ FrenchBall     = new Player(width/3, height/2, circleRadius, "FrenchBall.png");
 
 ### Final Product
 https://user-images.githubusercontent.com/80181145/210278626-d9eed192-5378-419e-8f93-5f3bccd42233.mp4
-
-
-
 
 
