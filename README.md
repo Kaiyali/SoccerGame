@@ -104,10 +104,10 @@ void move(float value) {
 
 
 ```
-This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md) to understand farther more about this problem. 
+This way was changed later on to improve the overall feel of the game as well as to easy developement [look at Movement Issues](https://github.com/Xpliot/SoccerGame/blob/main/Issue.md) to understand farther more about this problem. 
 ### Step Two - Physics 
 
-The following step was the most complex step I had to encount which is applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issues) and the slowing effects of the players after being launched is what I categorised as "physics" in my game. 
+The following step was the most complex step I had to encount which is applying 2d physics. [Collision](https://github.com/Xpliot/SoccerGame/blob/main/Issue.md) and the slowing effects of the players after being launched is what I categorised as "physics" in my game. 
 
 ``` processing 
  // checks if the two players have collided with one another via their corrodinate/positions by returning if it is true or false
@@ -124,7 +124,7 @@ boolean collision(Player p1, Player p2) {
 
 ### Step Four - Texture And Final Touches
 
-My final step was to add the finish touches such as a `Main Menu`, `Winner Window` and textures to make the game look prettier. This step sounds simple yet it as some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Issues(Testing).md). I drew these texture to place on top of the players (cicles).
+My final step was to add the finish touches such as a `Main Menu`, `Winner Window` and textures to make the game look prettier. This step sounds simple yet it as some level of complexity towards [Glueing Things Together](https://github.com/Xpliot/SoccerGame/blob/main/Issue.md). I drew these texture to place on top of the players (cicles).
 <p align="center">
     <img width="50" alt="ArgentinaBall-removebg-preview (1)" src="https://user-images.githubusercontent.com/80181145/209846750-3101af2d-ee9e-41bd-bcfd-350a5220c339.png">
     <img width="50" alt="FrenchBall" src="https://user-images.githubusercontent.com/80181145/209845175-c5a432e5-337b-4343-a44d-82a6e9e634aa.png">
