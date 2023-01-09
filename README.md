@@ -8,7 +8,7 @@
  ***
 ## Objective Of The Game
 
-`Socro` is a basic drog-move soccer game with an objective of scoring the 5 gaols against the opposition's net to come out as victorious. Althought the concepts sounds rather simple applying this into reality was no easy task.
+`Socro` is a basic drag-move soccer game with an objective of scoring the 5 gaols against the opposition's net to come out as victorious. Althought the concepts sounds rather simple applying this into reality was no easy task.
 
  ***
 
